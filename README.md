@@ -4,7 +4,7 @@ End-to-end **and** API test suite for [automationexercise.com](https://automatio
 
 Demonstrates the modern Playwright patterns expected in a production QA codebase: Page Object Model, custom fixtures, `storageState` auth reuse, cross-browser projects, API-layer tests, tagged test runs, and a sharded CI matrix.
 
-[![Playwright Tests](https://github.com/oussamaomari/automationexercise-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/oussamaomari/automationexercise-playwright/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/oussamaomari/automationexercise-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/oussama-qa/E-Comerce-Automation-Project/actions/workflows/playwright.yml)
 
 ---
 
