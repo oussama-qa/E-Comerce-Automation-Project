@@ -1,7 +1,6 @@
-const { test, expect } = require('../../fixtures');
+import { test, expect } from '../../fixtures';
 
-test.describe('Products', () => {
-
+test.describe('Products @smoke', () => {
   test.beforeEach(async ({ productsPage }) => {
     await productsPage.goto();
   });
@@ -18,7 +17,7 @@ test.describe('Products', () => {
 
   test('should show correct product in search results', async ({ productsPage }) => {
     await productsPage.searchProduct('Jeans');
-    expect(await productsPage.isSearchResultVisible('Jeans')).toBeTruthy();
+    await expect(productsPage.getSearchResultLocator('Jeans')).toBeVisible();
   });
 
   test('should add first product to cart', async ({ productsPage }) => {
@@ -29,7 +28,6 @@ test.describe('Products', () => {
 
   test('should navigate to product detail page', async ({ productsPage }) => {
     await productsPage.viewFirstProductDetail();
-    await expect(productsPage.getHeading("Blue Top")).toBeVisible();  
-});
-
+    await expect(productsPage.getHeading('Blue Top')).toBeVisible();
+  });
 });

@@ -1,16 +1,37 @@
 {
-  "name": "e-comerce-automation-project",
+  "name": "automationexercise-playwright",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
+  "description": "End-to-end & API test suite for automationexercise.com built with Playwright, TypeScript, Page Object Model, storageState auth, and cross-browser projects.",
+  "scripts": {
+    "test": "playwright test --project=chromium --project=api",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:api": "playwright test --project=api",
+    "test:smoke": "playwright test --grep @smoke --project=chromium --project=api",
+    "test:regression": "playwright test --grep @regression --project=chromium",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "qa",
+    "e2e",
+    "api-testing",
+    "page-object-model",
+    "cross-browser"
+  ],
+  "author": "Oussama El Omari",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "dotenv": "^17.4.1"
