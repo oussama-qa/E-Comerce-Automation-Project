@@ -160,5 +160,5 @@ Required repository secrets:
 ## Author
 
 **Oussama El Omari** — QA Engineer
-- GitHub: [@oussamaomari](https://github.com/oussamaomari)
+- GitHub: [@oussamaomari](https://github.com/oussama-qa)
 - LinkedIn: [linkedin.com/in/oussamaomari](https://linkedin.com/in/oussamaomari)
